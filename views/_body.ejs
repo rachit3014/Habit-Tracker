@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/style.css">
+    <div class="wrapper">
+        <h1>Start with new habit!!!</h1>
+        <!-- input form -->
+        <div class="addtask">
+            <form action="/create" id="task_input"method="post">
+            <input type="text"id="input_box" name='name'placeholder="addd task" required="true">  
+            <button type="submit"><i class="fa-sharp fa-solid fa-circle-plus "></i></button>
+            </form>
+        </div>
+        <!-- button of daily and weekly -->
+        <div class="btn">
+
+          <a href="/">
+          <button>Daily</button>
+          </a>
+          <a href="/weekly">
+        
+          <button>Weekly</button>
+        </a>
+
+        </div>
+        <!-- icons of status -->
+        <div class="marks">
+          <i class="fa-solid fa-circle-check fa-shake fa-2xl" style="color: #33c516;"></i>Done
+          <i class="fa-solid fa-circle-xmark fa-shake fa-2xl" style="color: #eb2438;"></i>Not Done
+          <i class="fa-sharp fa-solid fa-circle-minus fa-shake fa-2xl" style="color: #fbf309;"></i>Unmarked
+        </div>
+  
+      
+    

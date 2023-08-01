@@ -1,0 +1,27 @@
+<%- include('_body'); %>
+
+<ul class="daily">
+              
+            <% for ( i of habit_task ){ %>
+                <li id="task-<%=i.id%>">
+                    <!-- <a href="/status_up/<%=i.id %>"> -->
+                        <a href="/status_up/?task_id=<%=i.id %>&day=<%=i.all_updates[0].id%>">
+                        <%=i.all_updates.s%>
+                        <!-- toogle the task  -->
+                        <% if (i.all_updates[0].status=="DONE"){%>
+                            <i class="fa-solid fa-circle-check fa-shake fa-2xl" style="color: #33c516;cursor: pointer;"></i>
+                        <%}else if(i.all_updates[0].status=="NOTDONE"){%>
+                            <i class="fa-solid fa-circle-xmark fa-shake fa-2xl" style="color: #eb2438;"></i>
+                        <%} else{%>
+                            <i class="fa-sharp fa-solid fa-circle-minus fa-shake fa-2xl" style="color: #fbf309;"></i>
+                            <%}%>
+                    </a>
+                    <span><%= i.name %></span>
+                    <!-- delete of task -->
+                        <a href="/delete-task/<%=i.id %>">
+                           <i class="fa-sharp fa-solid fa-trash  fa-xl" style="color: #f70202;"></i>
+                        </a>  
+                </li>
+            <%} %>  
+</ul>
+</div>

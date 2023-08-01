@@ -1,0 +1,30 @@
+<%- include ('_body');%>
+<ul class="daily"> 
+           <% for (let j of habit_task){%>
+            <li >
+                <!-- task name -->
+                <span><%= j.name %></span>
+                <!-- delete button of task -->
+                <a href="/delete-task/<%= j._id %>">
+                <i class="fa-sharp fa-solid fa-trash  fa-xl" style="color: #f70202;"></i>
+             </a>
+             <% for (let o of j.all_updates) {%>     
+                    <div class="calender">
+                        <!-- status of day in a week -->
+                    <div class="day "><span><%=o.date %>,<%=o.day %></span></div>
+                    <a href="/status_up/?task_id=<%=j.id %>&day=<%=o.id%>">
+                        <%if (o.status==="DONE"){%>
+                            <i class="fa-solid fa-circle-check fa-shake fa-2xl" style="color: #33c516;cursor: pointer;"></i>
+                            <%}else if(o.status==="NONE"){%>
+                               
+                                <i class="fa-sharp fa-solid fa-circle-minus fa-shake fa-2xl" style="color: #fbf309;"></i>
+                            <%} else{%>
+                                <i class="fa-solid fa-circle-xmark fa-shake fa-2xl" style="color: #eb2438;"></i>        
+                                <%}%>
+                    </a>
+                </div>
+                <%}%> 
+
+            <%}%>   
+</ul>
+</div>

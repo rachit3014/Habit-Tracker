@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* for body */
+body
+{
+    background-color: rgb(20, 119, 255);
+    height: 100%;
+    width: 100%;
+ 
+}
+/* for nav bar div */
+.nav-bar
+{
+
+    height: 12vh;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 12px;
+    justify-content: space-between;
+    font-size: 1.6em;
+    color: aliceblue;
+
+    
+}
+
+
+/* for wrapper div */
+.wrapper
+{
+    
+    min-width: 50%;
+    margin: 35px;
+    border-radius: 15px;    
+    align-items: center;
+    background-color:#1366d8;
+    /* background-color:rgb(234, 115, 11); */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+
+
+}
+/* for wrapper heading */
+.wrapper h1
+{
+    color: aliceblue;
+    padding: 12px;
+}
+/* for add task div */
+.addtask
+{
+    display: flex;
+    align-items: center;
+}
+/* for addtask input */
+.addtask input
+{
+    border-radius: 9px;
+ 
+    padding: 15px;
+    width:18em;
+    font-size:1.7em ;
+   
+  
+}
+/* for addtask button */
+.addtask button
+{
+    background:transparent;
+    font-size: 3em;
+    /* border-radius: 15px; */
+    border: none;
+    margin: 10px;
+    color:green;
+    cursor: pointer;
+}
+.btn
+{
+    margin:5px;
+    text-align: center;
+}
+.btn button
+{
+    font-size: 15px;
+    padding: 10px;
+    background-color: #987107;
+    border-radius: 10px;
+    margin:12px;
+    color: aliceblue;
+    cursor: pointer;
+    
+}
+.btn a
+{
+    text-decoration: none;
+}
+
+.marks
+
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:80%;
+    /* 479px */
+    margin-top: 10px;
+    justify-content: space-around;
+    font-size: 1.5em;
+    margin-top: 22px;
+    /* margin-bottom: 22px; */
+
+
+}
+span
+{
+    color: #FFFFFA;
+}
+
+.daily
+{
+ 
+    list-style: none;
+    width: 90%;
+}
+.daily li
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px;
+    width: 90%;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 5px 10px rgb(2, 85, 88);
+    padding: 20px;
+    background-color: rgba(20, 119, 255, 0.856);
+    /* background-color: skyblue; */
+
+    /* background-color: brown; */
+}
+/* for calender class */
+.calender {
+    display         : inline-block;
+    margin-left     : 2%;
+    margin-right    : 2%;
+    margin-bottom   : 12px;
+    position        : relative;
+    width           : 50px;
+    height          : 60px;
+    background-color: #FFFFFA;
+    text-align      : center;
+    font-family     : Oswald, sans-serif;
+    font-size       : 10pt;
+    border-radius   : 3px;
+    box-shadow      : 3px 3px 1px grey;
+    overflow        : hidden;
+    user-select     : none;
+    
+}
+.calender i{
+    align-items: center;
+    margin-top: 22px;
+    font-size: 2em;
+}
+
+.day {
+    width           : 100%;
+    background-color: #E54B4B;
+    color: white;
+}
