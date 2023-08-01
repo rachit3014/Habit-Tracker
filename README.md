@@ -4,7 +4,7 @@
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/rachit3014/Habit-Tracker
 ```
 
 Go to the project directory
